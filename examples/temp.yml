@@ -1,0 +1,11 @@
+---
+- hosts: slave-5
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  tasks:
+  - name: test template
+    template: 
+      src: file
+      dest: /home
