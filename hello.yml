@@ -1,6 +1,6 @@
 ---
 - name: Hello World Sample
-  hosts: local
+  hosts: test
   tasks:
     - name: Hello Message
       debug:
