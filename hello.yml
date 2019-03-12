@@ -5,3 +5,8 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+    
+    - name: Test Copy
+      copy:
+        src=README.md
+        dest=~/
