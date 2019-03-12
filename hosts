@@ -1,23 +1,6 @@
-[slave]
-slave-1
-slave-2
-slave-3
-slave-4
-slave-5
-slave-6
-slave-7
-slave-8
-
-[cluster1]
-slave-5
-slave-6
-slave-7
-
-[control]
-slave-8
-
-[temp]
-slave-1
-slave-2
-slave-3
-slave-4
+[tecent]
+master  private_ip=192.168.0.16 name=master
+node-1   private_ip=192.168.0.15  name=node-1
+node-2   private_ip=192.168.0.7  name=node-2
+node-3   private_ip=192.168.0.5  name=node-3
+node-4   private_ip=192.168.0.17  name=node-4 
