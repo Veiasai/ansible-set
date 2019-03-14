@@ -1,0 +1,12 @@
+---
+- name: Start Node Prometheus
+  hosts: test
+  tasks:
+    - name: Check state
+      shell: ps aux | grep node_exporter | grep -v grep
+      register: state
+      ignore_errors: True
+
+    - name: Start Node Exporter when non-exist
+      shell: nohup /home/wuchunghsuan/node_exporter-0.16.0.linux-amd64/node_exporter >/dev/null 2>&1 &
+      when: state | failed
